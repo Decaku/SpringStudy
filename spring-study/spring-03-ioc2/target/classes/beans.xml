@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!--下标赋值-->
+   <bean name="user" class="com.decaku.pojo.User">
+<!--
+       <constructor-arg index="0" value="ferrari"></constructor-arg>
+-->
+        <!--类型赋值，但是如果有多个参数是同样类型就没法用了-->
+<!--
+     <constructor-arg type="java.lang.String" value="ferrari"> </constructor-arg>
+-->
+        <!--直接通过参数名来构造对象-->
+       <constructor-arg name="name" value="ferrari"></constructor-arg>
+   </bean>
+    <alias name="user" alias="userNew"></alias>
+
+    <bean id="userT" class="com.decaku.pojo.UserT">
+
+    </bean>
+</beans>
+

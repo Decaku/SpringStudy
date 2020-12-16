@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+<!--    开启注解支持-->
+    <context:annotation-config></context:annotation-config>
+
+
+    <bean id="cat" class="com.decaku.pojo.Cat"></bean>
+    <bean id="dog" class="com.decaku.pojo.Dog"></bean>
+    <bean id="person" class="com.decaku.pojo.Person"></bean>
+
+<!--    &lt;!&ndash;-->
+<!--    byName: 在容器上下文中寻找同名的beanid-->
+<!--    byTupe: 在容器上下文寻找类型相同的bean-->
+<!--    &ndash;&gt;-->
+<!--    <bean id="person" class="com.decaku.pojo.Person" autowire="byName">-->
+<!--        <property name="name" value="decaku"></property>-->
+<!--       &lt;!&ndash; <property name="dog" ref="dog"></property>-->
+<!--        <property name="cat" ref="cat"></property>&ndash;&gt;-->
+<!--    </bean>-->
+
+
+</beans>
+
